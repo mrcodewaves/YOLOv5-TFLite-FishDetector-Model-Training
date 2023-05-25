@@ -1,0 +1,5 @@
+train: ../dataset/train/images
+val: ../dataset/valid/images
+
+nc: 6
+names: ['Chinook Salmon', 'Coho Salmon', 'Sockeye Salmon', 'Pink Salmon', 'Chum Salmon', 'Steelhead']

@@ -1,0 +1,1501 @@
+(base) PS L:\Programming\YOLOv5-Training> pip3 install tqdm
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: tqdm in c:\programdata\anaconda3\lib\site-packages (4.64.1)
+Requirement already satisfied: colorama in c:\programdata\anaconda3\lib\site-packages (from tqdm) (0.4.6)
+(base) PS L:\Programming\YOLOv5-Training> conda deactivate 
+PS L:\Programming\YOLOv5-Training> conda activate YOLOv5-Training
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> conda env list
+# conda environments:
+#
+base                     C:\ProgramData\anaconda3
+TfliteSalmonTest1        C:\Users\Ray\.conda\envs\TfliteSalmonTest1
+YOLOv5-Training       *  C:\Users\Ray\.conda\envs\YOLOv5-Training
+YOLOv8-Training          C:\Users\Ray\.conda\envs\YOLOv8-Training
+imgDownloader            C:\Users\Ray\.conda\envs\imgDownloader
+pythonProject1           C:\Users\Ray\.conda\envs\pythonProject1
+testenv                  C:\Users\Ray\.conda\envs\testenv
+yolov8_custom            C:\Users\Ray\.conda\envs\yolov8_custom
+                         L:\datasetSalmon
+
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> C:\ProgramData\anaconda3\Library\bin\conda.bat install -p C:/Users/Ray/.conda/envs/YOLOv5-Training tdqm -y
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - tdqm
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/win-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/win-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+  - https://repo.anaconda.com/pkgs/msys2/win-64
+  - https://repo.anaconda.com/pkgs/msys2/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> pip3 install tqdm
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: tqdm in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (4.65.0)
+Requirement already satisfied: colorama in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from tqdm) (0.4.6)
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> C:\ProgramData\anaconda3\Library\bin\conda.bat install -p C:/Users/Ray/.conda/envs/YOLOv5-Training IProgress -y
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - iprogress
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/win-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/win-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+  - https://repo.anaconda.com/pkgs/msys2/win-64
+  - https://repo.anaconda.com/pkgs/msys2/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> pip install iprogress      
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting iprogress
+  Downloading IProgress-0.4-py3-none-any.whl (11 kB)
+Requirement already satisfied: six in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from iprogress) (1.16.0)
+Installing collected packages: iprogress
+Successfully installed iprogress-0.4
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> python train.py --img 640 --epochs 10 --data L:/Programming/YOLOv5-Training/dataset/data.yaml --weights yolov5x.pt --device 0,1 --cache disk
+C:\Users\Ray\.conda\envs\YOLOv5-Training\python.exe: can't open file 'L:\\Programming\\YOLOv5-Training\\train.py': [Errno 2] No such file or directory
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training> cd .\yolov5\                                                                                                   
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python train.py --img 640 --epochs 10 --data L:/Programming/YOLOv5-Training/dataset/data.yaml --weights yolov5x.pt --device 0,1 --cache disk
+train: weights=yolov5x.pt, cfg=, data=L:/Programming/YOLOv5-Training/dataset/data.yaml, hyp=data\hyps\hyp.scratch-low.yaml, epochs=10, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, noplots=False, evolve=None, bucke
+t=, cache=disk, image_weights=False, device=0,1, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=runs\train, name=exp, exist_ok=False, quad=False, cos_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=-1, seed=0, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+github:  YOLOv5 is out of date by 1 commit. Use 'git pull' or 'git clone https://github.com/ultralytics/yolov5' to update.
+Traceback (most recent call last):
+  File "L:\Programming\YOLOv5-Training\yolov5\train.py", line 642, in <module>
+    main(opt)
+  File "L:\Programming\YOLOv5-Training\yolov5\train.py", line 517, in main
+    device = select_device(opt.device, batch_size=opt.batch_size)
+  File "L:\Programming\YOLOv5-Training\yolov5\utils\torch_utils.py", line 118, in select_device
+    assert torch.cuda.is_available() and torch.cuda.device_count() >= len(device.replace(',', '')), \
+AssertionError: Invalid CUDA '--device 0,1' requested, use '--device cpu' or pass valid CUDA device(s)
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python train.py --img 640 --epochs 10 --data L:/Programming/YOLOv5-Training/dataset/data.yaml --weights yolov5x.pt --device 0 --cache disk  
+train: weights=yolov5x.pt, cfg=, data=L:/Programming/YOLOv5-Training/dataset/data.yaml, hyp=data\hyps\hyp.scratch-low.yaml, epochs=10, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, noplots=False, evolve=None, bucke
+t=, cache=disk, image_weights=False, device=0, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=runs\train, name=exp, exist_ok=False, quad=False, cos_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=-1, seed=0, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+github:  YOLOv5 is out of date by 1 commit. Use 'git pull' or 'git clone https://github.com/ultralytics/yolov5' to update.
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+
+hyperparameters: lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+ClearML: run 'pip install clearml' to automatically track, visualize and remotely train YOLOv5  in ClearML
+Comet: run 'pip install comet_ml' to automatically track and visualize YOLOv5  runs in Comet
+TensorBoard: Start with 'tensorboard --logdir runs\train', view at http://localhost:6006/
+Overriding model.yaml nc=80 with nc=6
+
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  4    309120  models.common.C3                        [160, 160, 4]
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]
+  4                -1  8   2259200  models.common.C3                        [320, 320, 8]
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]
+  6                -1 12  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   7375360  models.common.Conv                      [640, 1280, 3, 2]             
+  8                -1  4  19676160  models.common.C3                        [1280, 1280, 4]               
+  9                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]               
+ 10                -1  1    820480  models.common.Conv                      [1280, 640, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  4   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 14                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  4   1335040  models.common.C3                        [640, 320, 4, False]
+ 18                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  4   4922880  models.common.C3                        [640, 640, 4, False]          
+ 21                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]              
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  4  19676160  models.common.C3                        [1280, 1280, 4, False]        
+ 24      [17, 20, 23]  1     74019  models.yolo.Detect                      [6, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [320, 640, 1280]]
+Model summary: 445 layers, 86251459 parameters, 86251459 gradients, 204.7 GFLOPs
+
+Transferred 739/745 items from yolov5x.pt
+AMP: checks passed 
+optimizer: SGD(lr=0.01) with parameter groups 123 weight(decay=0.0), 126 weight(decay=0.0005), 126 bias
+train: Scanning L:\Programming\YOLOv5-Training\dataset\train\labels.cache... 8446 images, 43 backgrounds, 0 corrupt: 100%|██████████| 8446/8446 [00:00<?, ?it/s]
+train: Caching images (25.8GB disk): 100%|██████████| 8446/8446 [00:00<00:00, 47717.44it/s]
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+val: Scanning L:\Programming\YOLOv5-Training\dataset\valid\labels.cache... 745 images, 1 backgrounds, 0 corrupt: 100%|██████████| 745/745 [00:00<?, ?it/s]
+val: Caching images (2.3GB disk): 100%|██████████| 745/745 [00:00<00:00, 46551.31it/s]
+
+AutoAnchor: 2.78 anchors/target, 0.998 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Plotting labels to runs\train\exp5\labels.jpg...
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the p
+rocess, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python train.py --img 640 --epochs 10 --data L:/Programming/YOLOv5-Training/dataset/data.yaml --weights yolov5x.pt --device 0 --cache disk
+train: weights=yolov5x.pt, cfg=, data=L:/Programming/YOLOv5-Training/dataset/data.yaml, hyp=data\hyps\hyp.scratch-low.yaml, epochs=10, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, noplots=False, evolve=None, bucke
+t=, cache=disk, image_weights=False, device=0, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=runs\train, name=exp, exist_ok=False, quad=False, cos_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=-1, seed=0, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+github:  YOLOv5 is out of date by 1 commit. Use 'git pull' or 'git clone https://github.com/ultralytics/yolov5' to update.
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+
+hyperparameters: lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+ClearML: run 'pip install clearml' to automatically track, visualize and remotely train YOLOv5  in ClearML
+Comet: run 'pip install comet_ml' to automatically track and visualize YOLOv5  runs in Comet
+TensorBoard: Start with 'tensorboard --logdir runs\train', view at http://localhost:6006/
+Overriding model.yaml nc=80 with nc=6
+
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  4    309120  models.common.C3                        [160, 160, 4]
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]
+  4                -1  8   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]
+  6                -1 12  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   7375360  models.common.Conv                      [640, 1280, 3, 2]
+  8                -1  4  19676160  models.common.C3                        [1280, 1280, 4]               
+  9                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]
+ 10                -1  1    820480  models.common.Conv                      [1280, 640, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  4   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 14                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  4   1335040  models.common.C3                        [640, 320, 4, False]          
+ 18                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  4   4922880  models.common.C3                        [640, 640, 4, False]          
+ 21                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  4  19676160  models.common.C3                        [1280, 1280, 4, False]        
+ 24      [17, 20, 23]  1     74019  models.yolo.Detect                      [6, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [320, 640, 1280]]
+Model summary: 445 layers, 86251459 parameters, 86251459 gradients, 204.7 GFLOPs
+
+Transferred 739/745 items from yolov5x.pt
+AMP: checks passed 
+optimizer: SGD(lr=0.01) with parameter groups 123 weight(decay=0.0), 126 weight(decay=0.0005), 126 bias
+train: Scanning L:\Programming\YOLOv5-Training\dataset\train\labels.cache... 8446 images, 43 backgrounds, 0 corrupt: 100%|██████████| 8446/8446 [00:00<?, ?it/s]
+train: Caching images (25.8GB disk): 100%|██████████| 8446/8446 [00:00<00:00, 47717.63it/s]
+val: Scanning L:\Programming\YOLOv5-Training\dataset\valid\labels.cache... 745 images, 1 backgrounds, 0 corrupt: 100%|██████████| 745/745 [00:00<?, ?it/s]
+val: Caching images (2.3GB disk): 100%|██████████| 745/745 [00:00<00:00, 31036.82it/s]
+
+AutoAnchor: 2.78 anchors/target, 0.998 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Plotting labels to runs\train\exp6\labels.jpg... 
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to runs\train\exp6
+Starting training for 10 epochs...
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        0/9      13.7G    0.05108    0.02243    0.04258         31        640: 100%|██████████| 528/528 [01:51<00:00,  4.75it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  4.97it/s]
+                   all        745        897      0.151      0.467      0.289      0.172
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        1/9      18.4G    0.03698    0.01574    0.03376         46        640: 100%|██████████| 528/528 [01:47<00:00,  4.92it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.05it/s]
+                   all        745        897      0.448      0.574      0.542      0.323
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        2/9      18.4G    0.03531    0.01572    0.03032         30        640: 100%|██████████| 528/528 [01:48<00:00,  4.86it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.29it/s]
+                   all        745        897      0.577      0.514      0.525      0.323
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        3/9      18.4G    0.03358    0.01598    0.02946         43        640: 100%|██████████| 528/528 [01:46<00:00,  4.94it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.22it/s]
+                   all        745        897      0.535      0.488      0.471      0.281
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        4/9      18.4G    0.03358     0.0159    0.02924         27        640: 100%|██████████| 528/528 [01:48<00:00,  4.89it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.17it/s]
+                   all        745        897       0.61      0.604      0.612       0.39
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        5/9      18.4G    0.03124     0.0154    0.02623         34        640: 100%|██████████| 528/528 [01:48<00:00,  4.88it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.15it/s]
+                   all        745        897       0.65      0.653      0.673       0.45
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        6/9      18.4G    0.02957    0.01517    0.02465         49        640: 100%|██████████| 528/528 [01:46<00:00,  4.94it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.20it/s]
+                   all        745        897      0.686      0.666      0.695      0.485
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        7/9      18.4G    0.02831    0.01451    0.02306         46        640: 100%|██████████| 528/528 [01:48<00:00,  4.89it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.18it/s]
+                   all        745        897      0.751      0.676      0.752      0.531
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        8/9      18.4G    0.02635    0.01405    0.02105         38        640: 100%|██████████| 528/528 [01:46<00:00,  4.94it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.19it/s]
+                   all        745        897      0.734      0.722      0.768      0.542
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        9/9      18.4G    0.02517    0.01368    0.01983         49        640: 100%|██████████| 528/528 [01:48<00:00,  4.88it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.17it/s]
+                   all        745        897      0.735      0.725      0.793      0.579
+
+10 epochs completed in 0.316 hours.
+Optimizer stripped from runs\train\exp6\weights\last.pt, 173.1MB
+Optimizer stripped from runs\train\exp6\weights\best.pt, 173.1MB
+
+Validating runs\train\exp6\weights\best.pt...
+Fusing layers... 
+Model summary: 322 layers, 86207059 parameters, 0 gradients, 203.9 GFLOPs
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:05<00:00,  4.52it/s]
+                   all        745        897      0.735      0.725      0.793      0.579
+        Chinook Salmon        745        311      0.758      0.764      0.832      0.578
+           Coho Salmon        745        205      0.549      0.678      0.667      0.496
+        Sockeye Salmon        745        120      0.725        0.6      0.741      0.544
+           Pink Salmon        745         64      0.627      0.719      0.737      0.539
+           Chum Salmon        745         76      0.878      0.829      0.874      0.648
+             Steelhead        745        121      0.875       0.76      0.904       0.67
+Results saved to runs\train\exp6
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python export.py --weights runs/train/exp6/weights/best.pt --include tflite --img 640 
+export: data=L:\Programming\YOLOv5-Training\yolov5\data\coco128.yaml, weights=['runs/train/exp6/weights/best.pt'], imgsz=[640], batch_size=1, device=cpu, half=False, inplace=False, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=17, verbose=False, workspace=4, nms=False, agnostic_nms=False, topk_per_class=100, topk_all=100, iou_thres=0.45, conf_thres=0.25, include=['tflite']
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CPU
+
+Fusing layers... 
+Model summary: 322 layers, 86207059 parameters, 0 gradients, 203.9 GFLOPs
+
+PyTorch: starting from runs\train\exp6\weights\best.pt with output shape (1, 25200, 11) (165.0 MB)
+requirements: YOLOv5 requirement "tensorflow-cpu" not found, attempting AutoUpdate...
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting tensorflow-cpu
+  Downloading tensorflow_cpu-2.12.0-cp310-cp310-win_amd64.whl (2.0 kB)
+Collecting tensorflow-intel==2.12.0
+  Downloading tensorflow_intel-2.12.0-cp310-cp310-win_amd64.whl (272.8 MB)
+     ------------------------------------ 272.8/272.8 MB 108.8 MB/s eta 0:00:00
+Collecting tensorflow-estimator<2.13,>=2.12.0
+  Downloading tensorflow_estimator-2.12.0-py2.py3-none-any.whl (440 kB)
+     ---------------------------------------- 440.7/440.7 kB ? eta 0:00:00
+Collecting tensorboard<2.13,>=2.12
+  Downloading tensorboard-2.12.2-py3-none-any.whl (5.6 MB)
+     ---------------------------------------- 5.6/5.6 MB 119.7 MB/s eta 0:00:00
+Requirement already satisfied: six>=1.12.0 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow-cpu) (1.16.0)
+Collecting numpy<1.24,>=1.22
+  Downloading numpy-1.23.5-cp310-cp310-win_amd64.whl (14.6 MB)
+     -------------------------------------- 14.6/14.6 MB 131.1 MB/s eta 0:00:00
+Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3
+  Downloading protobuf-4.22.3-cp310-abi3-win_amd64.whl (420 kB)
+     ------------------------------------- 420.6/420.6 kB 27.4 MB/s eta 0:00:00
+Collecting grpcio<2.0,>=1.24.3
+  Downloading grpcio-1.54.0-cp310-cp310-win_amd64.whl (4.1 MB)
+     ---------------------------------------- 4.1/4.1 MB 131.7 MB/s eta 0:00:00
+Collecting keras<2.13,>=2.12.0
+  Downloading keras-2.12.0-py2.py3-none-any.whl (1.7 MB)
+     ---------------------------------------- 1.7/1.7 MB 115.2 MB/s eta 0:00:00
+Collecting absl-py>=1.0.0
+  Downloading absl_py-1.4.0-py3-none-any.whl (126 kB)
+     ---------------------------------------- 126.5/126.5 kB ? eta 0:00:00
+Collecting google-pasta>=0.1.1
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+     ---------------------------------------- 57.5/57.5 kB ? eta 0:00:00
+Collecting termcolor>=1.1.0
+  Downloading termcolor-2.3.0-py3-none-any.whl (6.9 kB)
+Requirement already satisfied: typing-extensions>=3.6.6 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow-cpu) (4.5.0)
+Requirement already satisfied: packaging in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow-cpu) (23.1)
+Collecting flatbuffers>=2.0
+  Downloading flatbuffers-23.3.3-py2.py3-none-any.whl (26 kB)
+Collecting astunparse>=1.6.0
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting wrapt<1.15,>=1.11.0
+  Downloading wrapt-1.14.1-cp310-cp310-win_amd64.whl (35 kB)
+Requirement already satisfied: setuptools in c:\users\ray\appdata\roaming\python\python310\site-packages (from tensorflow-intel==2.12.0->tensorflow-cpu) (67.7.2)
+Collecting libclang>=13.0.0
+  Downloading libclang-16.0.0-py2.py3-none-win_amd64.whl (24.4 MB)
+     --------------------------------------- 24.4/24.4 MB 31.2 MB/s eta 0:00:00
+Collecting gast<=0.4.0,>=0.2.1
+  Downloading gast-0.4.0-py3-none-any.whl (9.8 kB)
+Collecting tensorflow-io-gcs-filesystem>=0.23.1
+  Downloading tensorflow_io_gcs_filesystem-0.31.0-cp310-cp310-win_amd64.whl (1.5 MB)
+     ---------------------------------------- 1.5/1.5 MB 92.3 MB/s eta 0:00:00
+Collecting jax>=0.3.15
+  Downloading jax-0.4.8.tar.gz (1.2 MB)
+     ---------------------------------------- 1.2/1.2 MB 82.0 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting h5py>=2.9.0
+  Downloading h5py-3.8.0-cp310-cp310-win_amd64.whl (2.6 MB)
+     ---------------------------------------- 2.6/2.6 MB 163.7 MB/s eta 0:00:00
+Collecting opt-einsum>=2.3.2
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     ---------------------------------------- 65.5/65.5 kB ? eta 0:00:00
+Requirement already satisfied: wheel<1.0,>=0.23.0 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from astunparse>=1.6.0->tensorflow-intel==2.12.0->tensorflow-cpu) (0.38.4)
+Collecting ml-dtypes>=0.0.3
+  Downloading ml_dtypes-0.1.0-cp310-cp310-win_amd64.whl (120 kB)
+     ---------------------------------------- 120.4/120.4 kB ? eta 0:00:00
+Requirement already satisfied: scipy>=1.7 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from jax>=0.3.15->tensorflow-intel==2.12.0->tensorflow-cpu) (1.10.1)
+Collecting google-auth<3,>=1.6.3
+  Downloading google_auth-2.17.3-py2.py3-none-any.whl (178 kB)
+     ---------------------------------------- 178.2/178.2 kB ? eta 0:00:00
+Collecting google-auth-oauthlib<1.1,>=0.5
+  Downloading google_auth_oauthlib-1.0.0-py2.py3-none-any.whl (18 kB)
+Collecting werkzeug>=1.0.1
+  Downloading Werkzeug-2.3.2-py3-none-any.whl (242 kB)
+     ---------------------------------------- 242.2/242.2 kB ? eta 0:00:00
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.8.1-py3-none-any.whl (781 kB)
+     ------------------------------------- 781.3/781.3 kB 51.4 MB/s eta 0:00:00
+Requirement already satisfied: requests<3,>=2.21.0 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow-cpu) (2.29.0)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0
+  Downloading tensorboard_data_server-0.7.0-py3-none-any.whl (2.4 kB)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.4.3-py3-none-any.whl (93 kB)
+     ---------------------------------------- 93.9/93.9 kB ? eta 0:00:00
+Collecting rsa<5,>=3.1.4
+  Downloading rsa-4.9-py3-none-any.whl (34 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.3.0-py2.py3-none-any.whl (181 kB)
+     ---------------------------------------- 181.3/181.3 kB ? eta 0:00:00
+Collecting cachetools<6.0,>=2.0.0
+  Downloading cachetools-5.3.0-py3-none-any.whl (9.3 kB)
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow-cpu) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow-cpu) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow-cpu) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow-cpu) (2022.12.7)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\ray\.conda\envs\yolov5-training\lib\site-packages (from werkzeug>=1.0.1->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow-cpu) (2.1.2)
+Collecting pyasn1<0.6.0,>=0.4.6
+  Downloading pyasn1-0.5.0-py2.py3-none-any.whl (83 kB)
+     ---------------------------------------- 83.9/83.9 kB ? eta 0:00:00
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+     ---------------------------------------- 151.7/151.7 kB ? eta 0:00:00
+Building wheels for collected packages: jax
+  Building wheel for jax (pyproject.toml): started
+  Building wheel for jax (pyproject.toml): finished with status 'done'
+  Created wheel for jax: filename=jax-0.4.8-py3-none-any.whl size=1439795 sha256=763ef86497fdc89c96831f11d83a1a6122a94c6e0d48cfbd28ff0214c1fc7cff
+  Stored in directory: C:\Users\Ray\AppData\Local\Temp\pip-ephem-wheel-cache-xpjw3yjy\wheels\09\6f\35\a8fac8b61de8e0d9eb07988481528898561923e260b1fa7d2f
+Successfully built jax
+Installing collected packages: tensorboard-plugin-wit, libclang, flatbuffers, wrapt, werkzeug, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, pyasn1, protobuf, oauthlib, numpy, markdown, keras, grpcio, google-pasta, gast, cachetools, astunparse, absl-py, rsa, requests-oauthlib, pyasn1-modules, opt-einsum, ml-dtypes, h5py, jax, google-auth, google-auth-oauthlib, tensorboard, tensorflow-intel, tensorflow-cpu
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.3
+    Uninstalling numpy-1.24.3:
+      Successfully uninstalled numpy-1.24.3
+Successfully installed absl-py-1.4.0 astunparse-1.6.3 cachetools-5.3.0 flatbuffers-23.3.3 gast-0.4.0 google-auth-2.17.3 google-auth-oauthlib-1.0.0 google-pasta-0.2.0 grpcio-1.54.0 h5py-3.8.0 jax-0.4.8 keras-2.12.0 libclang-16.0.0 markdown-3.4.3 ml-dtypes-0.1.0 numpy-
+1.24.1 oauthlib-3.2.2 opt-einsum-3.3.0 protobuf-4.22.3 pyasn1-0.5.0 pyasn1-modules-0.3.0 requests-oauthlib-1.3.1 rsa-4.9 tensorboard-2.12.2 tensorboard-data-server-0.7.0 tensorboard-plugin-wit-1.8.1 tensorflow-cpu-2.12.0 tensorflow-estimator-2.12.0 tensorflow-intel-2.12.0 tensorflow-io-gcs-filesystem-0.31.0 termcolor-2.3.0 werkzeug-2.3.2 wrapt-1.14.1
+
+requirements: 1 package updated per ['tensorflow-cpu']
+requirements:  Restart runtime or rerun command for updates to take effect
+
+
+TensorFlow SavedModel: starting export with tensorflow 2.12.0...
+
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]              
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  1    309120  models.common.C3                        [160, 160, 4]                 
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]
+  4                -1  1   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]
+  6                -1  1  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   7375360  models.common.Conv                      [640, 1280, 3, 2]             
+  8                -1  1  19676160  models.common.C3                        [1280, 1280, 4]               
+  9                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]               
+ 10                -1  1    820480  models.common.Conv                      [1280, 640, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 14                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1   1335040  models.common.C3                        [640, 320, 4, False]          
+ 18                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1   4922880  models.common.C3                        [640, 640, 4, False]          
+ 21                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]                           
+ 23                -1  1  19676160  models.common.C3                        [1280, 1280, 4, False]        
+ 24      [17, 20, 23]  1     74019  models.yolo.Detect                      [6, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [320, 640, 1280], [640, 640]]
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to
+==================================================================================================
+ input_1 (InputLayer)           [(1, 640, 640, 3)]   0           []
+
+ tf_conv (TFConv)               (1, 320, 320, 80)    8720        ['input_1[0][0]']
+
+ tf_conv_1 (TFConv)             (1, 160, 160, 160)   115360      ['tf_conv[0][0]']
+
+ tfc3 (TFC3)                    (1, 160, 160, 160)   308160      ['tf_conv_1[0][0]']
+
+ tf_conv_13 (TFConv)            (1, 80, 80, 320)     461120      ['tfc3[0][0]']
+
+ tfc3_1 (TFC3)                  (1, 80, 80, 320)     2256000     ['tf_conv_13[0][0]']
+
+ tf_conv_33 (TFConv)            (1, 40, 40, 640)     1843840     ['tfc3_1[0][0]']
+
+ tfc3_2 (TFC3)                  (1, 40, 40, 640)     13116160    ['tf_conv_33[0][0]']
+
+ tf_conv_61 (TFConv)            (1, 20, 20, 1280)    7374080     ['tfc3_2[0][0]']
+
+ tfc3_3 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_conv_61[0][0]']
+
+ tfsppf (TFSPPF)                (1, 20, 20, 1280)    4097920     ['tfc3_3[0][0]']
+
+ tf_conv_75 (TFConv)            (1, 20, 20, 640)     819840      ['tfsppf[0][0]']
+
+ tf_upsample (TFUpsample)       (1, 40, 40, 640)     0           ['tf_conv_75[0][0]']
+
+ tf_concat (TFConcat)           (1, 40, 40, 1280)    0           ['tf_upsample[0][0]',
+                                                                  'tfc3_2[0][0]']
+
+ tfc3_4 (TFC3)                  (1, 40, 40, 640)     5328640     ['tf_concat[0][0]']
+
+ tf_conv_87 (TFConv)            (1, 40, 40, 320)     205120      ['tfc3_4[0][0]']
+
+ tf_upsample_1 (TFUpsample)     (1, 80, 80, 320)     0           ['tf_conv_87[0][0]']
+
+ tf_concat_1 (TFConcat)         (1, 80, 80, 640)     0           ['tf_upsample_1[0][0]',
+                                                                  'tfc3_1[0][0]']
+
+ tfc3_5 (TFC3)                  (1, 80, 80, 320)     1333120     ['tf_concat_1[0][0]']
+
+ tf_conv_99 (TFConv)            (1, 40, 40, 320)     921920      ['tfc3_5[0][0]']
+
+ tf_concat_2 (TFConcat)         (1, 40, 40, 640)     0           ['tf_conv_99[0][0]',
+                                                                  'tf_conv_87[0][0]']
+
+ tfc3_6 (TFC3)                  (1, 40, 40, 640)     4919040     ['tf_concat_2[0][0]']
+
+ tf_conv_111 (TFConv)           (1, 20, 20, 640)     3687040     ['tfc3_6[0][0]']
+
+ tf_concat_3 (TFConcat)         (1, 20, 20, 1280)    0           ['tf_conv_111[0][0]',
+                                                                  'tf_conv_75[0][0]']
+
+ tfc3_7 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_concat_3[0][0]']
+
+ tf_detect (TFDetect)           ((1, 25200, 11),     74019       ['tfc3_5[0][0]',
+                                )                                 'tfc3_6[0][0]',
+                                                                  'tfc3_7[0][0]']
+
+==================================================================================================
+Total params: 86,207,059
+Trainable params: 0
+Non-trainable params: 86,207,059
+__________________________________________________________________________________________________
+TensorFlow SavedModel: export success  49.4s, saved as runs\train\exp6\weights\best_saved_model (329.3 MB)
+
+TensorFlow Lite: starting export with tensorflow 2.12.0...
+WARNING:absl:Found untraced functions such as tf_conv_2_layer_call_fn, tf_conv_2_layer_call_and_return_conditional_losses, tf_conv_3_layer_call_fn, tf_conv_3_layer_call_and_return_conditional_losses, tf_conv_4_layer_call_fn while saving (showing 5 of 598). These functions will not be directly callable after loading.
+TensorFlow Lite: export success  97.0s, saved as runs\train\exp6\weights\best-fp16.tflite (164.6 MB)
+
+Export complete (148.2s)
+Results saved to L:\Programming\YOLOv5-Training\yolov5\runs\train\exp6\weights
+Detect:          python detect.py --weights runs\train\exp6\weights\best-fp16.tflite
+Validate:        python val.py --weights runs\train\exp6\weights\best-fp16.tflite
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'runs\train\exp6\weights\best-fp16.tflite')
+Visualize:       https://netron.app
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python train.py --img 640 --epochs 100 --data L:/Programming/YOLOv5-Training/dataset/data.yaml --weights yolov5x.pt --device 0 --cache disk
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+train: weights=yolov5x.pt, cfg=, data=L:/Programming/YOLOv5-Training/dataset/data.yaml, hyp=data\hyps\hyp.scratch-low.yaml, epochs=100, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, noplots=False, evolve=None, buck
+et=, cache=disk, image_weights=False, device=0, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=runs\train, name=exp, exist_ok=False, quad=False, cos_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=-1, seed=0, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 4.69 KiB | 800.00 KiB/s, done.
+From https://github.com/ultralytics/yolov5
+   1d65a5a..867f7f0  master     -> origin/master
+github:  YOLOv5 is out of date by 2 commits. Use 'git pull' or 'git clone https://github.com/ultralytics/yolov5' to update.
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+
+hyperparameters: lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+ClearML: run 'pip install clearml' to automatically track, visualize and remotely train YOLOv5  in ClearML
+Comet: run 'pip install comet_ml' to automatically track and visualize YOLOv5  runs in Comet
+TensorBoard: Start with 'tensorboard --logdir runs\train', view at http://localhost:6006/
+Overriding model.yaml nc=80 with nc=6
+
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  4    309120  models.common.C3                        [160, 160, 4]
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]
+  4                -1  8   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]
+  6                -1 12  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   7375360  models.common.Conv                      [640, 1280, 3, 2]
+  8                -1  4  19676160  models.common.C3                        [1280, 1280, 4]               
+  9                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]
+ 10                -1  1    820480  models.common.Conv                      [1280, 640, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  4   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 14                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]              
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  4   1335040  models.common.C3                        [640, 320, 4, False]
+ 18                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  4   4922880  models.common.C3                        [640, 640, 4, False]          
+ 21                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]              
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  4  19676160  models.common.C3                        [1280, 1280, 4, False]        
+ 24      [17, 20, 23]  1     74019  models.yolo.Detect                      [6, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [320, 640, 1280]]
+Model summary: 445 layers, 86251459 parameters, 86251459 gradients, 204.7 GFLOPs
+
+Transferred 739/745 items from yolov5x.pt
+AMP: checks passed 
+optimizer: SGD(lr=0.01) with parameter groups 123 weight(decay=0.0), 126 weight(decay=0.0005), 126 bias
+train: Scanning L:\Programming\YOLOv5-Training\dataset\train\labels.cache... 8446 images, 43 backgrounds, 0 corrupt: 100%|██████████| 8446/8446 [00:00<?, ?it/s]
+train: Caching images (25.8GB disk): 100%|██████████| 8446/8446 [00:00<00:00, 46481.14it/s]
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+val: Scanning L:\Programming\YOLOv5-Training\dataset\valid\labels.cache... 745 images, 1 backgrounds, 0 corrupt: 100%|██████████| 745/745 [00:00<?, ?it/s]
+val: Caching images (2.3GB disk): 100%|██████████| 745/745 [00:00<00:00, 32391.30it/s]
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+
+AutoAnchor: 2.78 anchors/target, 0.998 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Plotting labels to runs\train\exp7\labels.jpg... 
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to runs\train\exp7
+Starting training for 100 epochs...
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       0/99      13.7G    0.05108    0.02243    0.04258         31        640: 100%|██████████| 528/528 [01:53<00:00,  4.65it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.09it/s]
+                   all        745        897      0.151      0.467      0.289      0.172
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       1/99      18.5G    0.03746    0.01577    0.03422         46        640: 100%|██████████| 528/528 [01:46<00:00,  4.95it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.49it/s]
+                   all        745        897      0.458      0.593      0.539      0.315
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       2/99      18.5G    0.03687    0.01603    0.03099         30        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.60it/s]
+                   all        745        897      0.444      0.521      0.445      0.262
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       3/99      18.5G    0.03611    0.01709    0.03207         43        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.44it/s]
+                   all        745        897      0.424      0.453      0.409       0.25
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       4/99      18.5G    0.03564    0.01689     0.0315         27        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.51it/s]
+                   all        745        897      0.587      0.593      0.604      0.373
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       5/99      18.5G    0.03347    0.01644    0.02898         34        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.42it/s]
+                   all        745        897      0.665      0.532      0.574      0.364
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       6/99      18.5G    0.03265    0.01632    0.02776         49        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.50it/s]
+                   all        745        897      0.698      0.555      0.631      0.412
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       7/99      18.5G    0.03214    0.01601     0.0278         46        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.51it/s]
+                   all        745        897      0.484      0.496      0.393      0.245
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       8/99      18.5G    0.03098    0.01565    0.02707         38        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.29it/s]
+                   all        745        897      0.671      0.687      0.713      0.491
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+       9/99      18.5G    0.03072    0.01563    0.02688         49        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.45it/s]
+                   all        745        897      0.661      0.659      0.701      0.473
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      10/99      18.5G    0.02984    0.01533    0.02538         42        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.34it/s]
+                   all        745        897      0.691      0.684      0.723      0.502
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      11/99      18.5G    0.02979    0.01516    0.02541         36        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.35it/s]
+                   all        745        897      0.695       0.64      0.695      0.476
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      12/99      18.5G    0.02934    0.01509    0.02428         44        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.33it/s]
+                   all        745        897      0.743      0.639      0.722      0.501
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      13/99      18.5G    0.02883    0.01491    0.02384         43        640: 100%|██████████| 528/528 [01:44<00:00,  5.04it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.34it/s]
+                   all        745        897      0.729      0.657      0.738      0.519
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      14/99      18.5G    0.02852    0.01476    0.02372         36        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.36it/s]
+                   all        745        897      0.693      0.695      0.741      0.523
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      15/99      18.5G     0.0284    0.01486    0.02331         32        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897       0.74      0.656      0.736      0.521
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      16/99      18.5G    0.02836    0.01473    0.02343         40        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.45it/s]
+                   all        745        897      0.719      0.689      0.729       0.52
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      17/99      18.5G    0.02772    0.01426    0.02227         34        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.37it/s]
+                   all        745        897      0.801      0.679      0.777      0.552
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      18/99      18.5G    0.02745    0.01435    0.02094         48        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.48it/s]
+                   all        745        897      0.742       0.71      0.773       0.55
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      19/99      18.5G    0.02766    0.01432     0.0217         35        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.47it/s]
+                   all        745        897      0.773      0.689      0.781      0.555
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      20/99      18.5G    0.02749    0.01419    0.02216         39        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.30it/s]
+                   all        745        897      0.721      0.724      0.759       0.54
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      21/99      18.5G    0.02814    0.01437    0.02158         57        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.31it/s]
+                   all        745        897      0.726      0.692       0.76      0.543
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      22/99      18.5G     0.0273    0.01447    0.02101         46        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.24it/s]
+                   all        745        897      0.732      0.715      0.773      0.553
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      23/99      18.5G    0.02699    0.01423     0.0199         38        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.44it/s]
+                   all        745        897      0.724      0.745       0.78      0.567
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      24/99      18.5G    0.02668    0.01432    0.02123         34        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.36it/s]
+                   all        745        897      0.774      0.707      0.789      0.571
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      25/99      18.5G    0.02658    0.01413    0.01928         40        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.43it/s]
+                   all        745        897      0.734      0.732      0.773      0.562
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      26/99      18.5G    0.02626    0.01407    0.01873         47        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897       0.76      0.749        0.8      0.584
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      27/99      18.5G    0.02612    0.01372     0.0183         36        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.48it/s]
+                   all        745        897       0.77      0.704      0.783      0.576
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      28/99      18.5G    0.02576    0.01383    0.01906         44        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.38it/s]
+                   all        745        897      0.756      0.691      0.778      0.566
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      29/99      18.5G    0.02507    0.01375    0.01935         47        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.32it/s]
+                   all        745        897      0.763      0.747      0.802      0.588
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      30/99      18.5G    0.02531    0.01386    0.01804         29        640: 100%|██████████| 528/528 [01:45<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.41it/s]
+                   all        745        897       0.76      0.723        0.8      0.584
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      31/99      18.5G    0.02585    0.01375    0.01805         39        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.40it/s]
+                   all        745        897      0.795      0.678      0.797      0.587
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      32/99      18.5G    0.02509    0.01373    0.01853         35        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.38it/s]
+                   all        745        897      0.773      0.719      0.805        0.6
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      33/99      18.5G    0.02517    0.01373    0.01686         47        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.32it/s]
+                   all        745        897      0.795      0.699      0.797      0.586
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      34/99      18.5G    0.02545    0.01352     0.0172         41        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.43it/s]
+                   all        745        897      0.805      0.698        0.8      0.592
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      35/99      18.5G    0.02546    0.01356    0.01724         41        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.46it/s]
+                   all        745        897      0.814      0.692      0.803      0.589
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      36/99      18.5G    0.02502    0.01344     0.0165         38        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.30it/s]
+                   all        745        897      0.813      0.721      0.814      0.604
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      37/99      18.5G    0.02509    0.01342     0.0171         38        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.38it/s]
+                   all        745        897      0.772      0.761      0.819      0.604
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      38/99      18.5G    0.02451     0.0132    0.01659         46        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.49it/s]
+                   all        745        897      0.786       0.71      0.802      0.592
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      39/99      18.5G    0.02442    0.01333    0.01636         38        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.33it/s]
+                   all        745        897      0.782      0.774      0.809      0.602
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      40/99      18.5G    0.02445    0.01318      0.015         45        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897      0.843      0.724      0.821      0.615
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      41/99      18.5G     0.0244    0.01314    0.01496         41        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.31it/s]
+                   all        745        897       0.78      0.742      0.811      0.605
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      42/99      18.5G    0.02425    0.01326    0.01554         29        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.41it/s]
+                   all        745        897      0.779      0.733      0.805        0.6
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      43/99      18.5G    0.02419    0.01317    0.01571         30        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.32it/s]
+                   all        745        897      0.787      0.766      0.821      0.612
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      44/99      18.5G    0.02394    0.01301    0.01506         48        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.28it/s]
+                   all        745        897      0.828      0.709       0.82      0.615
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      45/99      18.5G    0.02366    0.01287    0.01513         31        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.50it/s]
+                   all        745        897      0.802      0.753      0.828      0.621
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      46/99      18.5G     0.0232    0.01288    0.01489         33        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.36it/s]
+                   all        745        897      0.806      0.729      0.821      0.617
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      47/99      18.5G    0.02373    0.01297    0.01412         51        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897      0.778      0.746      0.811      0.602
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      48/99      18.5G    0.02341    0.01274    0.01512         37        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.48it/s]
+                   all        745        897       0.81      0.771      0.833      0.622
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      49/99      18.5G    0.02321    0.01275    0.01344         44        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.46it/s]
+                   all        745        897       0.82      0.753      0.842      0.636
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      50/99      18.5G    0.02362    0.01275      0.014         30        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.44it/s]
+                   all        745        897       0.82      0.758      0.832      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      51/99      18.5G    0.02328    0.01271    0.01281         49        640: 100%|██████████| 528/528 [01:44<00:00,  5.04it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.60it/s]
+                   all        745        897      0.801      0.774      0.832      0.627
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      52/99      18.5G    0.02346    0.01272     0.0135         41        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897      0.788       0.78      0.822      0.612
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      53/99      18.5G    0.02314    0.01287    0.01327         37        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.53it/s]
+                   all        745        897      0.823      0.734      0.817      0.619
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      54/99      18.5G    0.02285    0.01245    0.01323         38        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.50it/s]
+                   all        745        897      0.805      0.737      0.817      0.612
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      55/99      18.5G    0.02298    0.01252    0.01327         35        640: 100%|██████████| 528/528 [01:46<00:00,  4.98it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.43it/s]
+                   all        745        897      0.827      0.735      0.819      0.616
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      56/99      18.5G    0.02273    0.01239    0.01187         49        640: 100%|██████████| 528/528 [01:46<00:00,  4.98it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.49it/s]
+                   all        745        897      0.801      0.751      0.812      0.615
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      57/99      18.5G    0.02293    0.01239    0.01189         40        640: 100%|██████████| 528/528 [01:45<00:00,  4.98it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897      0.844      0.707      0.822       0.62
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      58/99      18.5G    0.02211     0.0123    0.01166         38        640: 100%|██████████| 528/528 [01:46<00:00,  4.96it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.30it/s]
+                   all        745        897      0.812      0.766      0.825      0.624
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      59/99      18.5G    0.02249    0.01222    0.01161         60        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.38it/s]
+                   all        745        897      0.836      0.742      0.826      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      60/99      18.5G    0.02243     0.0121    0.01195         57        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.29it/s]
+                   all        745        897      0.838       0.73       0.83      0.625
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      61/99      18.5G    0.02251    0.01214    0.01227         30        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.58it/s]
+                   all        745        897      0.806      0.765      0.836      0.631
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      62/99      18.5G    0.02209    0.01223    0.01169         48        640: 100%|██████████| 528/528 [01:48<00:00,  4.88it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.17it/s]
+                   all        745        897      0.796      0.775      0.836      0.629
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      63/99      18.5G    0.02156    0.01198    0.01063         34        640: 100%|██████████| 528/528 [01:47<00:00,  4.91it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.45it/s]
+                   all        745        897      0.802      0.762      0.834      0.627
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      64/99      18.5G    0.02136    0.01199    0.01144         43        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.54it/s]
+                   all        745        897      0.766      0.791      0.826      0.624
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      65/99      18.5G    0.02143    0.01191    0.01072         40        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.59it/s]
+                   all        745        897      0.757      0.789      0.826      0.622
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      66/99      18.5G    0.02199    0.01199    0.01085         36        640: 100%|██████████| 528/528 [01:44<00:00,  5.04it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.53it/s]
+                   all        745        897      0.825      0.729      0.824      0.621
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      67/99      18.5G    0.02123    0.01191    0.01052         50        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.55it/s]
+                   all        745        897      0.793      0.773       0.83      0.625
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      68/99      18.5G    0.02139    0.01187    0.01142         51        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.43it/s]
+                   all        745        897      0.801      0.751      0.826      0.624
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      69/99      18.5G    0.02103    0.01173   0.009684         42        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.41it/s]
+                   all        745        897      0.823      0.738      0.827      0.626
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      70/99      18.5G      0.021    0.01171    0.00991         37        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.37it/s]
+                   all        745        897      0.813      0.756      0.827      0.625
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      71/99      18.5G    0.02118    0.01176    0.01055         35        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.47it/s]
+                   all        745        897      0.808      0.755      0.823      0.622
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      72/99      18.5G    0.02107    0.01167   0.009745         58        640: 100%|██████████| 528/528 [01:46<00:00,  4.96it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.41it/s]
+                   all        745        897      0.788      0.771      0.828      0.624
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      73/99      18.5G    0.02066    0.01182    0.01013         39        640: 100%|██████████| 528/528 [01:44<00:00,  5.05it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.48it/s]
+                   all        745        897      0.814      0.754      0.835      0.632
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      74/99      18.5G    0.02039    0.01138   0.009407         35        640: 100%|██████████| 528/528 [01:44<00:00,  5.04it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.53it/s]
+                   all        745        897      0.828      0.743      0.836      0.634
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      75/99      18.5G    0.02039    0.01138   0.008813         44        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.20it/s]
+                   all        745        897      0.812      0.756       0.83       0.63
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      76/99      18.5G     0.0199    0.01138   0.009549         41        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.38it/s]
+                   all        745        897      0.814      0.754      0.829      0.628
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      77/99      18.5G    0.02017    0.01135   0.008515         47        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.43it/s]
+                   all        745        897      0.814      0.743      0.831       0.63
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      78/99      18.5G     0.0195    0.01117   0.008418         40        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.36it/s]
+                   all        745        897      0.808       0.75      0.828      0.628
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      79/99      18.5G    0.02007    0.01109   0.008476         39        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.50it/s]
+                   all        745        897      0.809      0.749      0.826       0.63
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      80/99      18.5G    0.01949    0.01116   0.008358         38        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.47it/s]
+                   all        745        897       0.81      0.738      0.826      0.629
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      81/99      18.5G    0.01893    0.01084   0.007569         41        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.30it/s]
+                   all        745        897       0.81      0.745      0.822      0.625
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      82/99      18.5G    0.01913    0.01087   0.007863         41        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.46it/s]
+                   all        745        897      0.815      0.748      0.823      0.626
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      83/99      18.5G    0.01924    0.01089   0.007688         44        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.53it/s]
+                   all        745        897      0.808      0.744      0.818      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      84/99      18.5G    0.01891    0.01083   0.007398         40        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.50it/s]
+                   all        745        897      0.801      0.748      0.817      0.622
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      85/99      18.5G    0.01864    0.01082   0.007602         48        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.35it/s]
+                   all        745        897      0.809      0.743      0.819      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      86/99      18.5G    0.01869    0.01054   0.006946         32        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.47it/s]
+                   all        745        897      0.818      0.735       0.82      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      87/99      18.5G    0.01816    0.01052   0.007025         44        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.52it/s]
+                   all        745        897      0.809      0.747       0.82      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      88/99      18.5G    0.01848    0.01054   0.007357         51        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.39it/s]
+                   all        745        897      0.806      0.752      0.823      0.624
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      89/99      18.5G    0.01806    0.01049    0.00676         39        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.38it/s]
+                   all        745        897      0.809      0.746       0.82      0.625
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      90/99      18.5G    0.01777    0.01035   0.006671         43        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.41it/s]
+                   all        745        897      0.807      0.747      0.819      0.624
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      91/99      18.5G    0.01804    0.01042   0.007188         32        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.37it/s]
+                   all        745        897      0.803      0.747      0.816      0.623
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      92/99      18.5G    0.01801    0.01046   0.006862         35        640: 100%|██████████| 528/528 [01:45<00:00,  5.01it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.44it/s]
+                   all        745        897      0.823      0.739      0.815      0.622
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      93/99      18.5G     0.0175    0.01025   0.006465         36        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.30it/s]
+                   all        745        897      0.803      0.761      0.815      0.622
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      94/99      18.5G    0.01749    0.01027   0.006362         26        640: 100%|██████████| 528/528 [01:45<00:00,  4.99it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.47it/s]
+                   all        745        897      0.809      0.753      0.813       0.62
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      95/99      18.5G    0.01746     0.0102   0.006015         43        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.45it/s]
+                   all        745        897      0.793      0.761      0.812      0.619
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      96/99      18.5G    0.01734    0.01008   0.006264         34        640: 100%|██████████| 528/528 [01:45<00:00,  5.00it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.52it/s]
+                   all        745        897      0.793      0.764       0.81      0.619
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      97/99      18.5G    0.01703   0.009986   0.005489         44        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.65it/s]
+                   all        745        897      0.805      0.748      0.809      0.617
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      98/99      18.5G    0.01643   0.009828   0.005488         42        640: 100%|██████████| 528/528 [01:44<00:00,  5.03it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.36it/s]
+                   all        745        897      0.806      0.743      0.809      0.617
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      99/99      18.5G    0.01665   0.009891   0.005483         57        640: 100%|██████████| 528/528 [01:45<00:00,  5.02it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  5.54it/s]
+                   all        745        897       0.81      0.741      0.808      0.616
+
+100 epochs completed in 3.078 hours.
+Optimizer stripped from runs\train\exp7\weights\last.pt, 173.1MB
+Optimizer stripped from runs\train\exp7\weights\best.pt, 173.1MB
+
+Validating runs\train\exp7\weights\best.pt...
+Fusing layers... 
+Model summary: 322 layers, 86207059 parameters, 0 gradients, 203.9 GFLOPs
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 24/24 [00:04<00:00,  4.81it/s]
+                   all        745        897       0.82      0.753      0.842      0.636
+        Chinook Salmon        745        311      0.795      0.817      0.873      0.638
+           Coho Salmon        745        205      0.678      0.717      0.763      0.579
+        Sockeye Salmon        745        120      0.801      0.704      0.772      0.555
+           Pink Salmon        745         64      0.824      0.658      0.848      0.655
+           Chum Salmon        745         76      0.936      0.774      0.902      0.689
+             Steelhead        745        121      0.887      0.851      0.892      0.698
+Results saved to runs\train\exp7
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> export.py --weights runs/train/exp7/weights/best.pt --include tflite --img 640
+export.py: The term 'export.py' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+Suggestion [3,General]: The command export.py was not found, but does exist in the current location. PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\export.py". See "get-help about_Command_Precedence" for more details.
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python export.py --weights runs/train/exp7/weights/best.pt --include tflite --img 640
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+export: data=L:\Programming\YOLOv5-Training\yolov5\data\coco128.yaml, weights=['runs/train/exp7/weights/best.pt'], imgsz=[640], batch_size=1, device=cpu, half=False, inplace=False, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=17, verbose=False, workspace=4, nms=False, agnostic_nms=False, topk_per_class=100, topk_all=100, iou_thres=0.45, conf_thres=0.25, include=['tflite']
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CPU
+
+Fusing layers... 
+Model summary: 322 layers, 86207059 parameters, 0 gradients, 203.9 GFLOPs
+
+PyTorch: starting from runs\train\exp7\weights\best.pt with output shape (1, 25200, 11) (165.0 MB)
+
+TensorFlow SavedModel: starting export with tensorflow 2.12.0...
+
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]              
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  1    309120  models.common.C3                        [160, 160, 4]
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]              
+  4                -1  1   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]              
+  6                -1  1  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   7375360  models.common.Conv                      [640, 1280, 3, 2]             
+  8                -1  1  19676160  models.common.C3                        [1280, 1280, 4]               
+  9                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]
+ 10                -1  1    820480  models.common.Conv                      [1280, 640, 1, 1]             
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 14                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1   1335040  models.common.C3                        [640, 320, 4, False]          
+ 18                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]              
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1   4922880  models.common.C3                        [640, 640, 4, False]          
+ 21                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]              
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1  19676160  models.common.C3                        [1280, 1280, 4, False]        
+ 24      [17, 20, 23]  1     74019  models.yolo.Detect                      [6, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [320, 640, 1280], [640, 640]]
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to
+==================================================================================================
+ input_1 (InputLayer)           [(1, 640, 640, 3)]   0           []
+
+ tf_conv (TFConv)               (1, 320, 320, 80)    8720        ['input_1[0][0]']
+
+ tf_conv_1 (TFConv)             (1, 160, 160, 160)   115360      ['tf_conv[0][0]']
+
+ tfc3 (TFC3)                    (1, 160, 160, 160)   308160      ['tf_conv_1[0][0]']
+
+ tf_conv_13 (TFConv)            (1, 80, 80, 320)     461120      ['tfc3[0][0]']
+
+ tfc3_1 (TFC3)                  (1, 80, 80, 320)     2256000     ['tf_conv_13[0][0]']
+
+ tf_conv_33 (TFConv)            (1, 40, 40, 640)     1843840     ['tfc3_1[0][0]']
+
+ tfc3_2 (TFC3)                  (1, 40, 40, 640)     13116160    ['tf_conv_33[0][0]']
+
+ tf_conv_61 (TFConv)            (1, 20, 20, 1280)    7374080     ['tfc3_2[0][0]']
+
+ tfc3_3 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_conv_61[0][0]']
+
+ tfsppf (TFSPPF)                (1, 20, 20, 1280)    4097920     ['tfc3_3[0][0]']
+
+ tf_conv_75 (TFConv)            (1, 20, 20, 640)     819840      ['tfsppf[0][0]']
+
+ tf_upsample (TFUpsample)       (1, 40, 40, 640)     0           ['tf_conv_75[0][0]']
+
+ tf_concat (TFConcat)           (1, 40, 40, 1280)    0           ['tf_upsample[0][0]',
+                                                                  'tfc3_2[0][0]']
+
+ tfc3_4 (TFC3)                  (1, 40, 40, 640)     5328640     ['tf_concat[0][0]']
+
+ tf_conv_87 (TFConv)            (1, 40, 40, 320)     205120      ['tfc3_4[0][0]']
+
+ tf_upsample_1 (TFUpsample)     (1, 80, 80, 320)     0           ['tf_conv_87[0][0]']
+
+ tf_concat_1 (TFConcat)         (1, 80, 80, 640)     0           ['tf_upsample_1[0][0]',
+                                                                  'tfc3_1[0][0]']
+
+ tfc3_5 (TFC3)                  (1, 80, 80, 320)     1333120     ['tf_concat_1[0][0]']
+
+ tf_conv_99 (TFConv)            (1, 40, 40, 320)     921920      ['tfc3_5[0][0]']
+
+ tf_concat_2 (TFConcat)         (1, 40, 40, 640)     0           ['tf_conv_99[0][0]',
+                                                                  'tf_conv_87[0][0]']
+
+ tfc3_6 (TFC3)                  (1, 40, 40, 640)     4919040     ['tf_concat_2[0][0]']
+
+ tf_conv_111 (TFConv)           (1, 20, 20, 640)     3687040     ['tfc3_6[0][0]']
+
+ tf_concat_3 (TFConcat)         (1, 20, 20, 1280)    0           ['tf_conv_111[0][0]',
+                                                                  'tf_conv_75[0][0]']
+
+ tfc3_7 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_concat_3[0][0]']
+
+ tf_detect (TFDetect)           ((1, 25200, 11),     74019       ['tfc3_5[0][0]',
+                                )                                 'tfc3_6[0][0]',
+                                                                  'tfc3_7[0][0]']
+
+==================================================================================================
+Total params: 86,207,059
+Trainable params: 0
+Non-trainable params: 86,207,059
+__________________________________________________________________________________________________
+TensorFlow SavedModel: export success  22.7s, saved as runs\train\exp7\weights\best_saved_model (329.3 MB)
+
+TensorFlow Lite: starting export with tensorflow 2.12.0...
+WARNING:absl:Found untraced functions such as tf_conv_2_layer_call_fn, tf_conv_2_layer_call_and_return_conditional_losses, tf_conv_3_layer_call_fn, tf_conv_3_layer_call_and_return_conditional_losses, tf_conv_4_layer_call_fn while saving (showing 5 of 598). These functions will not be directly callable after loading.
+TensorFlow Lite: export success  99.8s, saved as runs\train\exp7\weights\best-fp16.tflite (164.6 MB)
+
+Export complete (124.3s)
+Results saved to L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights
+Detect:          python detect.py --weights runs\train\exp7\weights\best-fp16.tflite
+Validate:        python val.py --weights runs\train\exp7\weights\best-fp16.tflite
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'runs\train\exp7\weights\best-fp16.tflite')
+Visualize:       https://netron.app
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5> python export.py --data L:/Programming/YOLOv5-Training/dataset/data.yaml  --weights L:/Programming/YOLOv5-Training/yolov5/runs/train/exp7/weights/best.pt --include tflite --img 640 --device 0
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Ray\.conda\envs\YOLOv5-Training\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+export: data=L:/Programming/YOLOv5-Training/dataset/data.yaml, weights=['L:/Programming/YOLOv5-Training/yolov5/runs/train/exp7/weights/best.pt'], imgsz=[640], batch_size=1, device=0, half=False, inplace=False, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=17, verbose=False, workspace=4, nms=False, agnostic_nms=False, topk_per_class=100, topk_all=100, iou_thres=0.45, conf_thres=0.25, include=['tflite']
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+
+Fusing layers... 
+Model summary: 322 layers, 86207059 parameters, 0 gradients, 203.9 GFLOPs
+
+PyTorch: starting from L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights\best.pt with output shape (1, 25200, 11) (165.0 MB)
+
+TensorFlow SavedModel: starting export with tensorflow 2.12.0...
+
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]              
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  1    309120  models.common.C3                        [160, 160, 4]                 
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]
+  4                -1  1   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]
+  6                -1  1  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   7375360  models.common.Conv                      [640, 1280, 3, 2]             
+  8                -1  1  19676160  models.common.C3                        [1280, 1280, 4]               
+  9                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]               
+ 10                -1  1    820480  models.common.Conv                      [1280, 640, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 14                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]              
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1   1335040  models.common.C3                        [640, 320, 4, False]
+ 18                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]              
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1   4922880  models.common.C3                        [640, 640, 4, False]          
+ 21                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]              
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1  19676160  models.common.C3                        [1280, 1280, 4, False]        
+ 24      [17, 20, 23]  1     74019  models.yolo.Detect                      [6, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [320, 640, 1280], [640, 640]]
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to
+==================================================================================================
+ input_1 (InputLayer)           [(1, 640, 640, 3)]   0           []
+
+ tf_conv (TFConv)               (1, 320, 320, 80)    8720        ['input_1[0][0]']
+
+ tf_conv_1 (TFConv)             (1, 160, 160, 160)   115360      ['tf_conv[0][0]']
+
+ tfc3 (TFC3)                    (1, 160, 160, 160)   308160      ['tf_conv_1[0][0]']
+
+ tf_conv_13 (TFConv)            (1, 80, 80, 320)     461120      ['tfc3[0][0]']
+
+ tfc3_1 (TFC3)                  (1, 80, 80, 320)     2256000     ['tf_conv_13[0][0]']
+
+ tf_conv_33 (TFConv)            (1, 40, 40, 640)     1843840     ['tfc3_1[0][0]']
+
+ tfc3_2 (TFC3)                  (1, 40, 40, 640)     13116160    ['tf_conv_33[0][0]']
+
+ tf_conv_61 (TFConv)            (1, 20, 20, 1280)    7374080     ['tfc3_2[0][0]']
+
+ tfc3_3 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_conv_61[0][0]']
+
+ tfsppf (TFSPPF)                (1, 20, 20, 1280)    4097920     ['tfc3_3[0][0]']
+
+ tf_conv_75 (TFConv)            (1, 20, 20, 640)     819840      ['tfsppf[0][0]']
+
+ tf_upsample (TFUpsample)       (1, 40, 40, 640)     0           ['tf_conv_75[0][0]']
+
+ tf_concat (TFConcat)           (1, 40, 40, 1280)    0           ['tf_upsample[0][0]',
+                                                                  'tfc3_2[0][0]']
+
+ tfc3_4 (TFC3)                  (1, 40, 40, 640)     5328640     ['tf_concat[0][0]']
+
+ tf_conv_87 (TFConv)            (1, 40, 40, 320)     205120      ['tfc3_4[0][0]']
+
+ tf_upsample_1 (TFUpsample)     (1, 80, 80, 320)     0           ['tf_conv_87[0][0]']
+
+ tf_concat_1 (TFConcat)         (1, 80, 80, 640)     0           ['tf_upsample_1[0][0]',
+                                                                  'tfc3_1[0][0]']
+
+ tfc3_5 (TFC3)                  (1, 80, 80, 320)     1333120     ['tf_concat_1[0][0]']
+
+ tf_conv_99 (TFConv)            (1, 40, 40, 320)     921920      ['tfc3_5[0][0]']
+
+ tf_concat_2 (TFConcat)         (1, 40, 40, 640)     0           ['tf_conv_99[0][0]',
+                                                                  'tf_conv_87[0][0]']
+
+ tfc3_6 (TFC3)                  (1, 40, 40, 640)     4919040     ['tf_concat_2[0][0]']
+
+ tf_conv_111 (TFConv)           (1, 20, 20, 640)     3687040     ['tfc3_6[0][0]']
+
+ tf_concat_3 (TFConcat)         (1, 20, 20, 1280)    0           ['tf_conv_111[0][0]',
+                                                                  'tf_conv_75[0][0]']
+
+ tfc3_7 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_concat_3[0][0]']
+
+ tf_detect (TFDetect)           ((1, 25200, 11),     74019       ['tfc3_5[0][0]',
+                                )                                 'tfc3_6[0][0]',
+                                                                  'tfc3_7[0][0]']
+
+==================================================================================================
+Total params: 86,207,059
+Trainable params: 0
+Non-trainable params: 86,207,059
+__________________________________________________________________________________________________
+TensorFlow SavedModel: export success  21.8s, saved as L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights\best_saved_model (329.3 MB)
+
+TensorFlow Lite: starting export with tensorflow 2.12.0...
+WARNING:absl:Found untraced functions such as tf_conv_2_layer_call_fn, tf_conv_2_layer_call_and_return_conditional_losses, tf_conv_3_layer_call_fn, tf_conv_3_layer_call_and_return_conditional_losses, tf_conv_4_layer_call_fn while saving (showing 5 of 598). These functions will not be directly callable after loading.
+TensorFlow Lite: export success  97.5s, saved as L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights\best-fp16.tflite (164.6 MB)
+
+Export complete (125.4s)
+Results saved to L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights
+Detect:          python detect.py --weights L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights\best-fp16.tflite
+Validate:        python val.py --weights L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights\best-fp16.tflite
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'L:\Programming\YOLOv5-Training\yolov5\runs\train\exp7\weights\best-fp16.tflite')
+Visualize:       https://netron.app
+detect: weights=['runs/train/exp7/weights/best-fp16.tflite'], source=data/images/2.jpg, data=L:/Programming/YOLOv5-Training/dataset/data.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs\detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5  v7.0-158-g8211a03 Python-3.10.11 torch-2.0.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+
+Loading runs\train\exp7\weights\best-fp16.tflite for TensorFlow Lite inference...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+image 1/1 L:\Programming\YOLOv5-Training\yolov5\data\images\2.jpg: 640x640 1 Chinook Salmon, 1 Coho Salmon, 2557.5ms
+Speed: 669.6ms pre-process, 2557.5ms inference, 4.0ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs\detect\exp4
+(YOLOv5-Training) PS L:\Programming\YOLOv5-Training\yolov5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
