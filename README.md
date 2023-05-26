@@ -1,4 +1,8 @@
 # YOLOv5-TFLite-FishDetector-Model-Training
+Author: Mehdi Rahimi
+Created: May 25, 2023
+Capstone Project for Course C964 at the Western Governors University
+Instructor: Dr. Charles Paddock, Ph.D.
 
 This repository contains the code and resources used for training a custom YOLOv5 model to detect different species of salmonid fish. The model was trained using a dataset of images collected from various sources, including Google, Bing, and private fishing Facebook groups. The images were processed and annotated to create a robust dataset for training the model.
 
