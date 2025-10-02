@@ -1,6 +1,6 @@
 # YOLOv5-TFLite-FishDetector-Model-Training
 
-This repository contains the **dataset engineering and model training pipeline** for the AI engine behind the [FishSpeciesDetector Android app](https://github.com/exxxius/FishSpeciesDetector).  
+This repository contains the **dataset engineering and model training pipeline** for the AI engine behind the [FishSpeciesDetector Android app](https://github.com/mrcodewaves/FishSpeciesDetector).  
 It documents the full lifecycle: **data collection → dataset creation → training & benchmarking → distillation → mobile deployment**.  
 
 ---
@@ -97,27 +97,27 @@ The model was developed through **iterative transfer learning and distillation**
 
 #### Training Results
 <p align="center">
-  <img src="https://github.com/exxxius/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/results.png" width="70%" alt="Training Results">
+  <img src="https://github.com/mrcodewaves/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/results.png" width="70%" alt="Training Results">
 </p>
 
 #### Precision-Recall Curve
 <p align="center">
-  <img src="https://github.com/exxxius/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/PR_curve.png" width="70%" alt="PR Curve">
+  <img src="https://github.com/mrcodewaves/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/PR_curve.png" width="70%" alt="PR Curve">
 </p>
 
 #### Confusion Matrix
 <p align="center">
-  <img src="https://github.com/exxxius/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/confusion_matrix.png" width="70%" alt="Confusion Matrix">
+  <img src="https://github.com/mrcodewaves/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/confusion_matrix.png" width="70%" alt="Confusion Matrix">
 </p>
 
 #### F1 Curve
 <p align="center">
-  <img src="https://github.com/exxxius/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/F1_curve.png" width="70%" alt="F1 Curve">
+  <img src="https://github.com/mrcodewaves/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/F1_curve.png" width="70%" alt="F1 Curve">
 </p>
 
 #### Label Distribution
 <p align="center">
-  <img src="https://github.com/exxxius/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/labels.jpg" width="70%" alt="Label Distribution">
+  <img src="https://github.com/mrcodewaves/YOLOv5-TFLite-FishDetector-Model-Training/raw/master/latest-training-results/labels.jpg" width="70%" alt="Label Distribution">
 </p>
 
 ---
@@ -126,7 +126,7 @@ The model was developed through **iterative transfer learning and distillation**
 
 1. Clone this repo:
    ```sh
-   git clone https://github.com/exxxius/YOLOv5-TFLite-FishDetector-Model-Training.git
+   git clone https://github.com/mrcodewaves/YOLOv5-TFLite-FishDetector-Model-Training.git
    ```
 
 2. Install dependencies:
@@ -179,4 +179,4 @@ MIT License – see `LICENSE`.
 ## 📬 Contact
 
 For professional inquiries, please connect via GitHub profile:  
-[https://github.com/exxxius](https://github.com/exxxius)  
+[https://github.com/mrcodewaves](https://github.com/mrcodewaves)  
